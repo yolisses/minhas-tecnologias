@@ -11,6 +11,7 @@ import { Tech } from "./tech";
 type TechContext = {
   techs: Tech[];
   addTech: (name: string) => void;
+  removeTech: (id: string) => void;
   setTechs: Dispatch<SetStateAction<Tech[]>>;
 };
 
@@ -24,12 +25,17 @@ export function TechsProvider({ children }: { children: ReactNode }) {
   const [techs, setTechs] = useState<Tech[]>([]);
 
   function addTech(name: string) {
-    const tech: Tech = { name, finished: false };
+    const id = "" + Math.random();
+    const tech: Tech = { id, name, finished: false };
     setTechs((old) => [...old, tech]);
   }
 
+  function removeTech(id: string) {
+    setTechs((old) => old.filter((tech) => tech.id !== id));
+  }
+
   return (
-    <techsContext.Provider value={{ techs, setTechs, addTech }}>
+    <techsContext.Provider value={{ techs, setTechs, addTech, removeTech }}>
       {children}
     </techsContext.Provider>
   );
