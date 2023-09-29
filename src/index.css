@@ -2,3 +2,19 @@ div {
   display: flex;
   flex-direction: column;
 }
+
+html {
+  color: white;
+}
+
+.bg-gray-700 {
+  background: #0d0d0d;
+}
+
+.bg-gray-600 {
+  background: #1a1a1a;
+}
+
+.bg-gray-500 {
+  background: #262626;
+}
