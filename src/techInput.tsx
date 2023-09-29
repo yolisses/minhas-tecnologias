@@ -1,24 +1,14 @@
-import {
-  ChangeEvent,
-  Dispatch,
-  FormEvent,
-  SetStateAction,
-  useState,
-} from "react";
-import { Tech } from "./tech";
+import { ChangeEvent, FormEvent, useState } from "react";
+import { useTechs } from "./techsContext";
 
-type Props = {
-  setTechs: Dispatch<SetStateAction<Tech[]>>;
-};
-
-export function TechInput({ setTechs }: Props) {
+export function TechInput() {
+  const { addTech } = useTechs();
   const [name, setName] = useState("");
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     if (!name) return;
-    const tech: Tech = { name };
-    setTechs((old) => [...old, tech]);
+    addTech(name);
     setName("");
   }
 

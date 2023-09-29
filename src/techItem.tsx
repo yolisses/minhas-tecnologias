@@ -5,5 +5,10 @@ type Props = {
 };
 
 export function TechItem({ tech }: Props) {
-  return <div>{tech.name}</div>;
+  return (
+    <div>
+      {tech.name}
+      <button>delete</button>
+    </div>
+  );
 }

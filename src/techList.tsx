@@ -1,11 +1,17 @@
-import { Tech } from "./tech";
 import { TechItem } from "./techItem";
+import { useTechs } from "./techsContext";
 
-type Props = {
-  techs: Tech[];
-};
+export function TechList() {
+  const { techs } = useTechs();
+  if (techs.length === 0) {
+    return (
+      <div>
+        <div>Você ainda não tem tecnologias cadastradas</div>
+        <div>Crie tecnologia e organize seus itens a fazer</div>
+      </div>
+    );
+  }
 
-export function TechList({ techs }: Props) {
   return (
     <div>
       {techs.map((tech) => (
