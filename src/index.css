@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 div {
   display: flex;
   flex-direction: column;
 }
 
 html {
+  color: white;
+  font-family: "Inter", "Arial", "Ubuntu", sans-serif;
+}
+
+button {
   color: white;
 }
 
@@ -17,4 +24,48 @@ html {
 
 .bg-gray-500 {
   background: #262626;
+}
+
+.bg-blue-dark {
+  background: #1e6f9f;
+}
+
+.text-blue {
+  color: #4ea8de;
+}
+
+.text-purple {
+  color: #8284fa;
+}
+
+.text-white {
+  color: white;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.p-0_5 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
 }

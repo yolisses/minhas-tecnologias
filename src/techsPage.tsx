@@ -5,7 +5,7 @@ import { TechList } from "./techList";
 export function TechsPage() {
   return (
     <div>
-      <h1>Minha Lista de Tecnologia</h1>
+      <h1 className="text-blue font-bold">Minha Lista de Tecnologia</h1>
       <TechInput />
       <TechCounter />
       <TechList />

@@ -5,13 +5,12 @@ export function TechCounter() {
   const finishedCount = techs.filter((tech) => tech.finished).length;
 
   return (
-    <div>
-      <div>
-        Tecnologias criadas: <span>{techs.length}</span>
-      </div>
-      <div>
-        Concluídas: <span>{finishedCount}</span>
-      </div>
+    <div className="flex-row items-center font-bold gap-1">
+      <div className="text-blue">Tecnologias criadas</div>
+      <div>{techs.length}</div>
+      <div className="ml-auto"></div>
+      <div className="text-purple">Concluídas</div>
+      <div>{finishedCount}</div>
     </div>
   );
 }

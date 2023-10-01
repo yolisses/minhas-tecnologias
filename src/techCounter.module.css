@@ -1,0 +1,7 @@
+.techCounter {
+  flex-direction: row;
+}
+
+.techCounter .created {
+  color: pink;
+}

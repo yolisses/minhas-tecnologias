@@ -23,9 +23,12 @@ export function TechInput() {
         name="tech"
         value={name}
         onChange={handleChange}
+        className="bg-gray-500 text-white p-0_5"
         placeholder="Adicione uma nova tecnologia"
       />
-      <button type="submit">Criar</button>
+      <button className="bg-blue-dark p-0_5" type="submit">
+        Criar
+      </button>
     </form>
   );
 }

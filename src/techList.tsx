@@ -13,7 +13,7 @@ export function TechList() {
   }
 
   return (
-    <div>
+    <div className="gap-1">
       {techs.map((tech) => (
         <TechItem tech={tech} />
       ))}

@@ -13,9 +13,11 @@ export function TechItem({ tech }: Props) {
   }
 
   return (
-    <div>
+    <div className="bg-gray-500 flex-row">
       {tech.name}
-      <button onClick={handleClick}>delete</button>
+      <button className="ml-auto" onClick={handleClick}>
+        delete
+      </button>
     </div>
   );
 }
