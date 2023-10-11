@@ -21,7 +21,10 @@ export function TechItem({ tech }: Props) {
   }
 
   return (
-    <div className="bg-gray-500 flex-row rounded-0_5 gap-1 p-1">
+    <div
+      className="bg-gray-500 flex-row rounded-0_5 gap-1 p-1"
+      style={{ border: "solid 1px #333333" }}
+    >
       <CheckBox checked={finished} onClick={handleCheckClick}></CheckBox>
       <div
         style={{

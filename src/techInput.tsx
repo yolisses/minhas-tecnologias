@@ -28,6 +28,7 @@ export function TechInput() {
         onChange={handleChange}
         placeholder="Adicione uma nova tecnologia"
         className="bg-gray-500 text-white p-1 flex-1 rounded-0_5"
+        style={{ border: "solid 1px #0D0D0D" }}
       />
       <button className="bg-blue-dark p-1 rounded-0_5" type="submit">
         Criar
