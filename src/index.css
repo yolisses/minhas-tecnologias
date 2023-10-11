@@ -160,6 +160,10 @@ button {
   border-radius: 1rem;
 }
 
+.rounded-full {
+  border-radius: 9999rem;
+}
+
 .opacity-50 {
   opacity: 50%;
 }

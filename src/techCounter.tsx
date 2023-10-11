@@ -1,3 +1,4 @@
+import { Badge } from "./badge";
 import { useTechs } from "./techsContext";
 
 export function TechCounter() {
@@ -6,12 +7,14 @@ export function TechCounter() {
 
   return (
     <>
-      <div className="flex-row items-center font-bold gap-1 pb-1">
+      <div className="flex-row items-center font-bold gap-0_5 pb-1">
         <div className="text-blue">Tecnologias criadas</div>
-        <div className="bg-gray-500">{techs.length}</div>
-        <div className="ml-auto"></div>
+        <Badge>{techs.length}</Badge>
+        <div className="ml-auto" />
         <div className="text-purple">Concluídas</div>
-        <div>{finishedCount}</div>
+        <Badge>
+          {finishedCount} de {techs.length}
+        </Badge>
       </div>
       <hr />
     </>
