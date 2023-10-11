@@ -13,6 +13,7 @@ type TechContext = {
   addTech: (name: string) => void;
   removeTech: (id: string) => void;
   setTechs: Dispatch<SetStateAction<Tech[]>>;
+  toggleTech: (tech: Tech) => void;
 };
 
 const techsContext = createContext({} as TechContext);
@@ -34,8 +35,25 @@ export function TechsProvider({ children }: { children: ReactNode }) {
     setTechs((old) => old.filter((tech) => tech.id !== id));
   }
 
+  function refresh() {
+    setTechs((old) => [...old]);
+  }
+
+  function toggleTech(tech: Tech) {
+    tech.finished = !tech.finished;
+    refresh();
+  }
+
   return (
-    <techsContext.Provider value={{ techs, setTechs, addTech, removeTech }}>
+    <techsContext.Provider
+      value={{
+        techs,
+        addTech,
+        setTechs,
+        removeTech,
+        toggleTech,
+      }}
+    >
       {children}
     </techsContext.Provider>
   );
