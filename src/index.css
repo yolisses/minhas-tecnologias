@@ -92,12 +92,16 @@ button {
   margin-left: auto;
 }
 
+.gap-0_5 {
+  gap: 0.5rem;
+}
+
 .gap-1 {
   gap: 1rem;
 }
 
-.gap-0_5 {
-  gap: 0.5rem;
+.gap-2 {
+  gap: 2rem;
 }
 
 .p-0_5 {
@@ -114,6 +118,10 @@ button {
 
 .p-3 {
   padding: 3rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
 }
 
 .w-full {

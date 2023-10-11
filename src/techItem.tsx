@@ -13,7 +13,7 @@ export function TechItem({ tech }: Props) {
   }
 
   return (
-    <div className="bg-gray-500 flex-row">
+    <div className="bg-gray-500 flex-row p-1 rounded-0_5">
       {tech.name}
       <button className="ml-auto" onClick={handleClick}>
         delete
