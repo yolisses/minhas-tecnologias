@@ -1,3 +1,4 @@
+import Trash from "./assets/trash.svg";
 import { CheckBox } from "./checkBox";
 import { Tech } from "./tech";
 import { useTechs } from "./techsContext";
@@ -35,7 +36,7 @@ export function TechItem({ tech }: Props) {
         {tech.name}
       </div>
       <button className="ml-auto" onClick={handleClick}>
-        delete
+        <img src={Trash} />
       </button>
     </div>
   );
