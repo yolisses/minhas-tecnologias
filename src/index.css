@@ -160,20 +160,10 @@ button {
   border-radius: 1rem;
 }
 
-.checkbox {
-  visibility: hidden;
+.opacity-50 {
+  opacity: 50%;
 }
 
-input.checkbox::after {
-  visibility: visible;
-  content: "F";
-  color: red;
-  background: green;
-  padding: 8px;
-}
-
-input.checkbox:checked::after {
-  content: " T ";
-  color: green;
-  background: red;
+.font-medium {
+  font-weight: 600;
 }
