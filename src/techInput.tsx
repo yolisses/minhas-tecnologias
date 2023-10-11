@@ -17,14 +17,17 @@ export function TechInput() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className="w-full flex flex-row bg-red justify-center"
+    >
       <input
         type="text"
         name="tech"
         value={name}
         onChange={handleChange}
-        className="bg-gray-500 text-white p-0_5"
         placeholder="Adicione uma nova tecnologia"
+        className="bg-gray-500 text-white p-0_5 flex-1"
       />
       <button className="bg-blue-dark p-0_5" type="submit">
         Criar

@@ -4,11 +4,16 @@ import { TechList } from "./techList";
 
 export function TechsPage() {
   return (
-    <div>
-      <h1 className="text-blue font-bold">Minha Lista de Tecnologia</h1>
-      <TechInput />
-      <TechCounter />
-      <TechList />
+    <div className="items-center">
+      <div className="h-10 bg-gray-700 absolute top-0 w-full -z-10"></div>
+      <div className="w-full max-w-40 items-stretch">
+        <div className="h-10 flex-col items-center justify-center">
+          <h1 className="text-blue font-bold">Minha Lista de Tecnologia</h1>
+        </div>
+        <TechInput />
+        <TechCounter />
+        <TechList />
+      </div>
     </div>
   );
 }
