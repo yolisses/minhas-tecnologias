@@ -14,6 +14,7 @@ export function CheckBox({ checked, onClick }: Props) {
         padding: 0,
         height: "1em",
         cursor: "pointer",
+        userSelect: "none",
       }}
     >
       <img src={checked ? CheckedTrue : CheckedFalse} />
