@@ -19,7 +19,7 @@ export function TechInput() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full flex flex-row bg-red justify-center"
+      className="w-full flex flex-row justify-center gap-0_5"
     >
       <input
         type="text"
@@ -27,9 +27,9 @@ export function TechInput() {
         value={name}
         onChange={handleChange}
         placeholder="Adicione uma nova tecnologia"
-        className="bg-gray-500 text-white p-0_5 flex-1"
+        className="bg-gray-500 text-white p-1 flex-1 rounded-0_5"
       />
-      <button className="bg-blue-dark p-0_5" type="submit">
+      <button className="bg-blue-dark p-1 rounded-0_5" type="submit">
         Criar
       </button>
     </form>

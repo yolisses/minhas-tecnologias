@@ -10,7 +10,9 @@ export function TechsPage() {
         <div className="h-10 flex-col items-center justify-center">
           <h1 className="text-blue font-bold">Minha Lista de Tecnologia</h1>
         </div>
-        <TechInput />
+        <div className="-translate-y-1-2">
+          <TechInput />
+        </div>
         <TechCounter />
         <TechList />
       </div>
