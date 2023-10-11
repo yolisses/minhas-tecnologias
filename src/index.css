@@ -159,3 +159,21 @@ button {
 .rounded-1 {
   border-radius: 1rem;
 }
+
+.checkbox {
+  visibility: hidden;
+}
+
+input.checkbox::after {
+  visibility: visible;
+  content: "F";
+  color: red;
+  background: green;
+  padding: 8px;
+}
+
+input.checkbox:checked::after {
+  content: " T ";
+  color: green;
+  background: red;
+}
