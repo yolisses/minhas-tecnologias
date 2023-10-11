@@ -9,7 +9,7 @@ export function TechsPage() {
       <div className="w-full max-w-40 items-stretch gap-2">
         <div>
           <div className="h-10 flex-col items-center justify-center">
-            <h1 className="text-blue font-bold">Minha Lista de Tecnologia</h1>
+            <h1 className="text-blue font-bold">Minha Lista de Tecnologias</h1>
           </div>
           <div className="-translate-y-1-2">
             <TechInput />

@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
+import Add from "./assets/add.svg";
 import { useTechs } from "./techsContext";
 
 export function TechInput() {
@@ -30,8 +31,12 @@ export function TechInput() {
         className="bg-gray-500 text-white p-1 flex-1 rounded-0_5"
         style={{ border: "solid 1px #0D0D0D" }}
       />
-      <button className="bg-blue-dark p-1 rounded-0_5" type="submit">
+      <button
+        className="bg-blue-dark p-1 rounded-0_5 flex flex-row items-center gap-0_5"
+        type="submit"
+      >
         Criar
+        <img src={Add} />
       </button>
     </form>
   );
